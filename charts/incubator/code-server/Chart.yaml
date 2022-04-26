@@ -1,0 +1,23 @@
+apiVersion: v2
+appVersion: 4.2.0
+description: code-server helm package
+name: code-server
+version: 1.0.0
+kubeVersion: ">=1.16.0-0"
+keywords:
+- code-server
+home: https://github.com/Aste88/helm-charts/tree/master/charts/code-server
+icon: https://code-server.org/icon
+sources:
+- https://github.com/coder/code-server
+maintainers:
+  - name: Aste88
+    email: admin@aste.tools
+dependencies:
+- name: common
+  repository: https://library-charts.k8s-at-home.com
+  version: 4.3.0
+annotations:
+  artifacthub.io/changes: |
+    - kind: added
+      description: Initial version
